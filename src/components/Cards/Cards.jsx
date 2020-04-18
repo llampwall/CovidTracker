@@ -26,7 +26,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Active COVID-19 cases worldwide</Typography>
+                        <Typography variant="body2">Active COVID-19 cases</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.recovered)}>
@@ -41,7 +41,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of recovered cases</Typography>
+                        <Typography variant="body2">Recovered from COVID-19</Typography>
                     </CardContent>
                 </Grid>
                 <Grid item component={Card} xs={12} md={3} className={cx(styles.card, styles.deaths)}>
@@ -56,7 +56,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                             />
                         </Typography>
                         <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
-                        <Typography variant="body2">Number of deaths due to COVID-19</Typography>
+                        <Typography variant="body2">Killed by COVID-19</Typography>
                     </CardContent>
                 </Grid>
             </Grid>
